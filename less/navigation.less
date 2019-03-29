@@ -1,9 +1,51 @@
 // Navigation code here
 .container {
-    nav {
+    .excess-nav {
         display: flex;
-        flex-direction: column;
-        align-items: center;
-
+        justify-content: center;
+        background-color: @nav-bg;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        left: 0;   
+        nav {
+            max-width: 800px;
+            margin-top: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .nav-items {
+                display: flex;
+                justify-content: space-between;
+                a {
+                    font-family: @nav-font;
+                    color: @main-font-color;
+                    font-size: 1.7rem;
+                    padding: 18px 14px 13px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    .hidden-nav{
+        visibility: hidden;
+        nav {
+            max-width: 800px;
+            margin-top: 12px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .nav-items {
+                display: flex;
+                justify-content: space-between;
+                a {
+                    font-family: @nav-font;
+                    color: @main-font-color;
+                    font-size: 1.7rem;
+                    padding: 18px 14px 13px;
+                    text-decoration: none;
+                }
+            }
+        }
     }
 }
