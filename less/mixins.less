@@ -12,3 +12,17 @@
     height: auto;
     width: 100%;
 }
+
+.buttonFormat(@font-size: 1.6rem, @padding: 5px, @bg-color: black, @col: white) {
+    border-radius: 5px;
+    font-size: @font-size;
+    padding: @padding;
+    background-color: @bg-color;
+    color: @col;
+    text-align: center;
+    transition-duration: 200ms;
+    &:hover {
+        background-color: @col;
+        color: @bg-color;
+    }
+}
