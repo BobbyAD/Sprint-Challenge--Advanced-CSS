@@ -1,3 +1,7 @@
+.imgScaling {
+  height: auto;
+  width: 100%;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -165,7 +169,10 @@ p {
 }
 .container .excess-nav {
   display: flex;
+  flex-direction: row;
   justify-content: center;
+  align-content: center;
+  align-items: center;
   background-color: #F6F6F6;
   position: absolute;
   width: 100%;
@@ -177,11 +184,16 @@ p {
   margin-top: 12px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
   align-items: center;
 }
 .container .excess-nav nav .nav-items {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-content: auto;
+  align-items: auto;
 }
 .container .excess-nav nav .nav-items a {
   font-family: #454A59;
@@ -198,11 +210,16 @@ p {
   margin-top: 12px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
   align-items: center;
 }
 .container .hidden-nav nav .nav-items {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-content: auto;
+  align-items: auto;
 }
 .container .hidden-nav nav .nav-items a {
   font-family: #454A59;
@@ -223,6 +240,8 @@ footer {
 }
 .home .intro .main-header-img {
   border-radius: 5px;
+  height: auto;
+  width: 100%;
 }
 .home .intro h2 {
   padding: 15px;
@@ -255,7 +274,10 @@ footer {
   border-top: 1px solid #dee2e6;
   padding: 50px 60px;
   display: flex;
+  flex-direction: auto;
   justify-content: center;
+  align-content: auto;
+  align-items: auto;
 }
 .home .walk .walk-text {
   width: 50%;
@@ -271,7 +293,7 @@ footer {
   margin-left: 4%;
 }
 .home .walk .walk-img img {
-  width: 100%;
   height: auto;
+  width: 100%;
   border-radius: 10px;
 }

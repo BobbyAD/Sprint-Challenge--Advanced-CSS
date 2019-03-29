@@ -5,6 +5,7 @@
   .intro {
     .main-header-img {
       border-radius: 5px;
+      .imgScaling();
     }
 
     h2 {
@@ -46,8 +47,7 @@
     margin-top: 60px;
     border-top: 1px solid @main-border-color;
     padding: 50px 60px;
-    display: flex;
-    justify-content: center;
+    .displayFlex(auto, center, auto);
 
     .walk-text {
       width: 50%;
@@ -69,8 +69,7 @@
       margin-left: 4%;
       
       img {
-        width: 100%;
-        height: auto;
+        .imgScaling();
         border-radius: 10px;
       }
     }
