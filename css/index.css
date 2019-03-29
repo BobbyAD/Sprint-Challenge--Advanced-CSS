@@ -173,7 +173,7 @@ p {
   justify-content: center;
   align-content: center;
   align-items: center;
-  background-color: #F6F6F6;
+  background: hsla(0, 0%, 96.47058824%, 0.9);
   position: fixed;
   width: 100%;
   top: 0;
